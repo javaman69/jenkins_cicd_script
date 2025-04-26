@@ -11,13 +11,13 @@
     ignore_errors: yes
 
   - name: remove current docker image
-    command: docker rmi javaman69/cicd-project-ansible
+    command: docker rmi edowon0623/cicd-project-ansible
     ignore_errors: yes
 
   - name: pull the newest docker image from Docker Hub
-    command: docker pull javaman69/cicd-project-ansible
+    command: docker pull edowon0623/cicd-project-ansible
 
   - name: create a container using cicd-project-ansible image
-    command: docker run -d --name my_cicd_project -p 8080:8080 javaman69/cicd-project-ansible
+    command: docker run -d --name my_cicd_project -p 8080:8080 edowon0623/cicd-project-ansible
 
 
